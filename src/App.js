@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Todo from "./Components/ToDoList/Todo.js";
+import {BrowserRouter , Routes,Route} from "react-router-dom";
+import RandomProfile from "./Components/RandomProfileGenerator/RandomProfile.js";
+import AccordionMenu from "./Components/AccordionMenu/AccordionMenu.js";
+import IncDec from './Components/IncDec/IncDec.js';
+import Quote from './Components/Quote/Quote';
+import Galeryapp from './Components/GaleryApp/Galery.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/incdec" element={<IncDec />} />
+        <Route path="/randomprofile" element={<RandomProfile />} />
+        <Route path="/accordionmenu" element={<AccordionMenu />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="/galeryapp" element={<Galeryapp />} />
+      </Routes>
+    </BrowserRouter>  
+  )
 }
 
 export default App;
