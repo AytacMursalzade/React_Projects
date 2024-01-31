@@ -5,7 +5,6 @@ import RandomProfile from "./Components/RandomProfileGenerator/RandomProfile.js"
 import AccordionMenu from "./Components/AccordionMenu/AccordionMenu.js";
 import IncDec from './Components/IncDec/IncDec.js';
 import Quote from './Components/Quote/Quote';
-import Galeryapp from './Components/GaleryApp/Galery.js';
 
 function App() {
 
@@ -17,7 +16,6 @@ function App() {
         <Route path="/randomprofile" element={<RandomProfile />} />
         <Route path="/accordionmenu" element={<AccordionMenu />} />
         <Route path="/quote" element={<Quote />} />
-        <Route path="/galeryapp" element={<Galeryapp />} />
       </Routes>
     </BrowserRouter>  
   )
