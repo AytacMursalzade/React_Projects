@@ -30,7 +30,7 @@ function Shopping({ product, basket, setBasket }) {
     }
   }
 
-  function removeBasket(product , ) {
+  function removeBasket(product) {
     if (basket.length === 0) {
       return;
     }
@@ -51,39 +51,39 @@ function Shopping({ product, basket, setBasket }) {
         },
       ]);
     }
-    
   }
 
   return (
-    <div className=" w-[100%] flex flex-col h-[200px] ">
-      <div className="w-[250px] h-[200px]   ">
-        <div className="bg-[#A39583] flex  justify-center ">
+    <div className=" w-[250px]  ">
+      <div>
+        <div className="bg-[#A39583] flex flex-col gap-[5px] justify-center items-center ">
           <img
-            className="w-[150px] h-[150px]"
+            className="w-[150px] h-[150px] flex justify-center"
             src={product.img}
             alt="product"
           />
+          <div className="bg-[#A39583] flex flex-col items-center pb-[12px] gap-[8px]">
+            <p>{product.name}</p>
+            <p>{product.price} AZN </p>
+          </div>
+         
         </div>
-        <div className="bg-[#A39583] flex flex-col items-center pb-[12px] gap-[8px]">
-          <p>{product.name}</p>
-          <p>{product.price} AZN </p>
-        </div>
-        <div className="flex gap-[50px] justify-around h-[28px] bg-[#ad9d8a] ">
-          <button
-            className="w-[50px]  bg-[#AC9C88]  "
-            onClick={() => addBasket(product)}
-          >
-           <b> +</b>
-          </button>
-          {product.amount}
+        <div className="flex justify-around h-[28px] bg-[#ad9d8a] ">
+            <button
+              className="w-[50px]  bg-[#AC9C88]  "
+              onClick={() => addBasket(product)}
+            >
+              <b> +</b>
+            </button>
+            {product.amount}
 
-          <button
-            className="w-[50px]  bg-[#AC9C88]  "
-            onClick={() => removeBasket(product)}
-          >
-            <b>-</b>
-          </button>
-        </div>
+            <button
+              className="w-[50px]  bg-[#AC9C88]  "
+              onClick={() => removeBasket(product)}
+            >
+              <b>-</b>
+            </button>
+          </div>
       </div>
     </div>
   );

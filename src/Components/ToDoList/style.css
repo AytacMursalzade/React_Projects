@@ -4,15 +4,15 @@
   
 
   ::-webkit-scrollbar-track {
-    background: #3E2253;
+    background: #A39583;
   }
   
 
   ::-webkit-scrollbar-thumb {
-    background: #C886BA;
+    background: #564C4A;
   }
   
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #613F7A;
+    background: #A39583;
   }
