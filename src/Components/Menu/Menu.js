@@ -1,41 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import Cardapp from "./Cardapp";
-import Todo from './../ToDoList/Todo';
-import AccordionMenu from "../AccordionMenu/AccordionMenu";
-import IncDec from "../IncDec/IncDec";
-import Quote from "../Quote/Quote";
-import RandomProfile from "../RandomProfileGenerator/RandomProfile";
+import { GrReactjs } from "react-icons/gr";
 
 function Menu() {
-  const [openTodo, setOpenToDo] = useState(0);
-  const clickFn = (cardNumber)=>{
-    setOpenToDo(cardNumber);
-  }
-  // const cardapps = Array.from({ length: 10 }, (_,index) => {
-  //   <Cardapp key={index} onclick={() => clickFn(index)} />;
-  // });
-
-  const allTodo = [
-    <AccordionMenu key={0} cardNumber={0} />,
-    <IncDec key={1} cardNumber={1} />,
-    <Quote key={2} cardNumber={2} />,
-    <RandomProfile key={3} cardNumber={3} />,
-    <Todo key={4} cardNumber={4} />
-  ]
-
-  const selectedTodo = allTodo[openTodo]
+  const links = [
+    { to: "/todo", name: "ToDo", icon: <GrReactjs /> },
+    { to: "/incdec", name: "Increment Or Decrement", icon: <GrReactjs /> },
+    { to: "/randomprofile", name: "Random Profile", icon: <GrReactjs /> },
+    { to: "/accordionmenu", name: "Accordion Menu", icon: <GrReactjs /> },
+    { to: "/quote", name: "Quote", icon: <GrReactjs /> },
+    { to: "/shopping", name: "Shopping Day", icon: <GrReactjs /> },
+  ];
 
   return (
-    <div className="bg-[#887A82]  h-[150px] w-[100%] flex  overflow-x-scroll px-[20px]   ">
-      {selectedTodo}
+    <div className="bg-[#887A82]  h-screen w-[100%]  px-[20px]   ">
       <div className="flex items-center gap-[20px] ">
-        <Cardapp onClick={()=>(clickFn(0))} />
-        <Cardapp onClick={()=>(clickFn(1))} />
-        <Cardapp onClick={()=>(clickFn(2))} />
-        <Cardapp onClick={()=>(clickFn(3))} />
-        <Cardapp onClick={()=>(clickFn(4))} />
+        {links.map((link) => (
+          <NavLink className="w-[150px] h-[150px]" key={link.to} to={link.to}>
+            <Cardapp name={link.name} icon={link.icon}/>
+          </NavLink>
+        ))}
       </div>
-      
     </div>
   );
 }
