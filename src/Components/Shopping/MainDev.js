@@ -13,8 +13,8 @@ function MainDev() {
           Shopping Day
         </h1>
       </b>
-      <div >
-        <div className="grid grid-rows-4 py-[15px] px-[15px]">
+      <div className="flex  overflow-hidden">
+        <div className="flex  w-[80%] py-[15px] px-[2px]">
           {products.map((product) => (
             <Product
               key={products.id}
