@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function RandomProfile() {
-  const [profile, SetProfil] = useState("");
+  const [profile, SetProfil] = useState();
   const [email, SetEmail] = useState("");
   const [number, SetNumber] = useState("");
   const [date, setDate] = useState("");
