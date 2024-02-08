@@ -54,7 +54,7 @@ function Shopping({ product, basket, setBasket }) {
   }
 
   return (
-    <div className=" w-[250px] ">
+    <div className=" w-[250px] pl-[80px]  ">
       <div>
         <div className="bg-[#A39583] flex flex-col gap-[5px] justify-center items-center ">
           <img
