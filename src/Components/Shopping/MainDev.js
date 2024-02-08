@@ -7,14 +7,14 @@ function MainDev() {
   const [basket, setBasket] = useState([]);
   const [cost, setCost] = useState("");
   return (
-    <div>
+    <div className="w-[100%] ">
       <b>
         <h1 className="text-center font-extrabold my-[25px] text-[32px] text-[#6C4C47] ">
           Shopping Day
         </h1>
       </b>
-      <div className="flex  overflow-hidden">
-        <div className="flex  w-[80%] py-[15px] px-[2px]">
+      <div className="flex ">
+        <div className="flex flex-wrap gap-[12px]  px-[2px]">
           {products.map((product) => (
             <Product
               key={products.id}
@@ -24,7 +24,7 @@ function MainDev() {
             />
           ))}
         </div>
-        <Basket cost={cost} basket={basket} />
+        <Basket  cost={cost} basket={basket} />
       </div>
     </div>
   );

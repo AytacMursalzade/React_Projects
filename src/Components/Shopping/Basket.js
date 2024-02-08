@@ -2,7 +2,7 @@ import React from "react";
 
 function Basket({ basket, cost }) {
   return (
-    <div className="bg-[#654943]  flex flex-col gap-[12px] justify-around text-[#A39583] items-center text-center w-[306px] h-[100vh] overflow-auto">
+    <div className="bg-[#654943]  flex flex-col gap-[12px] justify-around text-[#A39583] items-center text-center w-[650px] min-h-[100vh]">
       <b><h1>Basket</h1></b>
       {(basket.length === 0 && <b><p>Not found product</p></b>) || null}
       {basket.map((item) => (
