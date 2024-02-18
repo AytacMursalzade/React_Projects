@@ -6,7 +6,8 @@ import AccordionMenu from "./Components/AccordionMenu/AccordionMenu.js";
 import IncDec from "./Components/IncDec/IncDec.js";
 import Quote from "./Components/Quote/Quote";
 import Menu from './Components/Menu/Menu';
-import Shopping from './Components/Shopping/MainDev.js'
+import Shopping from './Components/Shopping/MainDev.js';
+import NewModelApp from './Components/NewModelApp/RedInc.js';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/accordionmenu" element={<AccordionMenu />} />
           <Route path="/quote" element={<Quote />} />
           <Route path="/shopping" element={<Shopping />} />
+          <Route path="/modelapp" element={<NewModelApp />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -11,10 +11,11 @@ function Menu() {
     { to: "/accordionmenu", name: "Accordion Menu", icon: <GrReactjs /> },
     { to: "/quote", name: "Quote", icon: <GrReactjs /> },
     { to: "/shopping", name: "Shopping Day", icon: <GrReactjs /> },
+    { to: "/modelapp", name: "Redux App", icon: <GrReactjs /> },
   ];
 
   return (
-    <div className="bg-[#887A82]  h-screen w-[100%]  px-[20px]   ">
+    <div className="bg-[#ABAAA6]  h-screen w-[100%]  px-[20px]   ">
       <div className="flex items-center gap-[20px] ">
         {links.map((link) => (
           <NavLink className="w-[150px] h-[150px]" key={link.to} to={link.to}>
