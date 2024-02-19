@@ -5,9 +5,9 @@ function Question({ header, text }) {
   const [showDetail, setShowDetail] = useState(false);
 
   return (
-    <div className="flex gap-[50px]">
+    <div className="flex gap-[50px] h-screen ">
       <div className="w-[380px] ">
-        <h1>{text}</h1>
+        <h2>{text}</h2>
       </div>
       <div>
         <button onClick={() => setShowDetail(!showDetail)}>
