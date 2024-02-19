@@ -5,7 +5,7 @@ function Question({ header, text }) {
   const [showDetail, setShowDetail] = useState(false);
 
   return (
-    <div className="flex gap-[50px] ">
+    <div className="flex gap-[50px]">
       <div className="w-[380px] ">
         <h1>{text}</h1>
       </div>

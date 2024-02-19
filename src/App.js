@@ -8,6 +8,7 @@ import Quote from "./Components/Quote/Quote";
 import Menu from './Components/Menu/Menu';
 import Shopping from './Components/Shopping/MainDev.js';
 import NewModelApp from './Components/NewModelApp/RedInc.js';
+import Word from './Components/WordReverseApp/Word.js'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/quote" element={<Quote />} />
           <Route path="/shopping" element={<Shopping />} />
           <Route path="/modelapp" element={<NewModelApp />} />
+          <Route path="/reverseapp" element={<Word />} />
         </Routes>
       </BrowserRouter>
     </>
