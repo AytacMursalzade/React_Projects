@@ -7,7 +7,7 @@ function Question({ header, text }) {
   return (
     <div className="flex gap-[50px]">
       <div className="w-[380px] ">
-        <h1>{text}</h1>
+        <h2>{text}</h2>
       </div>
       <div>
         <button onClick={() => setShowDetail(!showDetail)}>
