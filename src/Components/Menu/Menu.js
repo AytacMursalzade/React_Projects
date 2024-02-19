@@ -12,6 +12,7 @@ function Menu() {
     { to: "/quote", name: "Quote", icon: <GrReactjs /> },
     { to: "/shopping", name: "Shopping Day", icon: <GrReactjs /> },
     { to: "/modelapp", name: "Redux App", icon: <GrReactjs /> },
+    { to: "/reverseapp", name: "Word Reverse App", icon: <GrReactjs /> },
   ];
 
   return (
