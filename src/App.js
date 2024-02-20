@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState , useEffect} from "react";
 import Todo from "./Components/ToDoList/Todo.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RandomProfile from "./Components/RandomProfileGenerator/RandomProfile.js";
@@ -8,12 +8,41 @@ import Quote from "./Components/Quote/Quote";
 import Menu from './Components/Menu/Menu';
 import Shopping from './Components/Shopping/MainDev.js';
 import NewModelApp from './Components/NewModelApp/RedInc.js';
-import Word from './Components/WordReverseApp/Word.js'
+import Word from './Components/WordReverseApp/Word.js';
+import { PiMoonStarsLight } from "react-icons/pi";
 
+const getStorageTheme = () => {
+  let theme = 'light-theme';
+  if (localStorage.getItem('theme')){
+    theme = localStorage.getItem('theme');
+  }
+  return theme;
+};
 
 function App() {
+
+  const [theme, setTheme] = useState(getStorageTheme());
+
+  const toggletheme = () => {
+    if(theme === 'light-theme'){
+      setTheme('dark-theme');
+    }else{
+      setTheme('light-theme');
+    }
+  };
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   return (
-    <>
+    <div className="bg-[#ABAAA6]">
+
+      
+        
+        <button className="text-[30px] ml-[1480px] pt-[12px] " onClick={toggletheme}><PiMoonStarsLight /></button>
+      
       {/* <Menu /> */}
       <BrowserRouter>
         <Routes>
@@ -28,7 +57,7 @@ function App() {
           <Route path="/reverseapp" element={<Word />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
