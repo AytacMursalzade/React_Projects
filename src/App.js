@@ -10,6 +10,7 @@ import Shopping from './Components/Shopping/MainDev.js';
 import NewModelApp from './Components/NewModelApp/RedInc.js';
 import Word from './Components/WordReverseApp/Word.js';
 import { PiMoonStarsLight } from "react-icons/pi";
+import Calc from "./Components/Calculator/Calc.js";
 
 const getStorageTheme = () => {
   let theme = 'light-theme';
@@ -55,6 +56,8 @@ function App() {
           <Route path="/shopping" element={<Shopping />} />
           <Route path="/modelapp" element={<NewModelApp />} />
           <Route path="/reverseapp" element={<Word />} />
+          <Route path="/reverseapp" element={<Word />} />
+          <Route path="/calculator" element={<Calc />} />
         </Routes>
       </BrowserRouter>
     </div>

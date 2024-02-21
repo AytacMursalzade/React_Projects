@@ -13,14 +13,16 @@ function Menu() {
     { to: "/shopping", name: "Shopping Day", icon: <GrReactjs /> },
     { to: "/modelapp", name: "Redux App", icon: <GrReactjs /> },
     { to: "/reverseapp", name: "Word Reverse App", icon: <GrReactjs /> },
+    { to: "/calculator", name: "Calculator App", icon: <GrReactjs /> },
   ];
 
   return (
-    <div className="bg-[#ABAAA6]  h-screen w-[100%]  px-[20px]   ">
-      <div className="flex items-center gap-[20px] ">
+    <div className="bg-[#ABAAA6]  h-screen">
+      <div className="flex  gap-[20px]  ">
         {links.map((link) => (
-          <NavLink className="w-[150px] h-[150px]" key={link.to} to={link.to}>
+          <NavLink className="w-[150px] h-[150px] " key={link.to} to={link.to}>
             <Cardapp name={link.name} icon={link.icon}/>
+            
           </NavLink>
         ))}
       </div>
