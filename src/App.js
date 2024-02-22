@@ -11,6 +11,7 @@ import NewModelApp from './Components/NewModelApp/RedInc.js';
 import Word from './Components/WordReverseApp/Word.js';
 import { PiMoonStarsLight } from "react-icons/pi";
 import Calc from "./Components/Calculator/Calc.js";
+import CocktailMenu from "./Components/Cocktails/CocktailMenu.js";
 
 const getStorageTheme = () => {
   let theme = 'light-theme';
@@ -58,6 +59,7 @@ function App() {
           <Route path="/reverseapp" element={<Word />} />
           <Route path="/reverseapp" element={<Word />} />
           <Route path="/calculator" element={<Calc />} />
+          <Route path="/cocktails" element={<CocktailMenu />} />
         </Routes>
       </BrowserRouter>
     </div>
