@@ -38,7 +38,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className="bg-[#ABAAA6]">
+    <div className="bg-[#ABAAA6] ">
 
       
         
