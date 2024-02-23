@@ -12,6 +12,7 @@ import Word from './Components/WordReverseApp/Word.js';
 import { PiMoonStarsLight } from "react-icons/pi";
 import Calc from "./Components/Calculator/Calc.js";
 import CocktailMenu from "./Components/Cocktails/CocktailMenu.js";
+import RollMenu from "./Components/Roll Dice/RollMenu.js";
 
 const getStorageTheme = () => {
   let theme = 'light-theme';
@@ -50,6 +51,7 @@ function App() {
         <Routes>
           <Route  index element={<Menu />} />
           <Route path="/todo" element={<Todo />} />
+          <Route path="/rolldice" element={<RollMenu />} />
           <Route path="/incdec" element={<IncDec />} />
           <Route path="/randomprofile" element={<RandomProfile />} />
           <Route path="/accordionmenu" element={<AccordionMenu />} />

@@ -5,14 +5,15 @@ import React, {
   useCallback,
   useEffect,
 } from "react";
+import "./style.css";
 
-const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
+const url = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("a");
-  const [coctails, setCoctails] = useState([]);
+  const [cocktails, setCocktails] = useState([]);
 
   const fetchDrinks = useCallback(async () => {
     setLoading(true);
@@ -23,7 +24,7 @@ const AppProvider = ({ children }) => {
 
       const { drinks } = data;
       if (drinks) {
-        const newcoctails = drinks.map((item) => {
+        const newCocktails = drinks.map((item) => {
           const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
             item;
 
@@ -35,9 +36,9 @@ const AppProvider = ({ children }) => {
             glass: strGlass,
           };
         });
-        setCoctails(newcoctails);
+        setCocktails(newCocktails);
       } else {
-        setCoctails([]);
+        setCocktails([]);
       }
       setLoading(false);
     } catch (error) {
@@ -50,7 +51,7 @@ const AppProvider = ({ children }) => {
   }, [searchTerm, fetchDrinks]);
 
   return (
-    <AppContext.Provider value={{ loading, coctails, searchTerm }}>
+    <AppContext.Provider value={{ loading, cocktails, searchTerm, setSearchTerm }}>
       {children}
     </AppContext.Provider>
   );

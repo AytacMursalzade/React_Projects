@@ -14,7 +14,8 @@ function Menu() {
     { to: "/modelapp", name: "Redux App", icon: <GrReactjs /> },
     { to: "/reverseapp", name: "Word Reverse App", icon: <GrReactjs /> },
     { to: "/calculator", name: "Calculator App", icon: <GrReactjs /> },
-    { to: "/cocktails", name: "Cocktails ", icon: <GrReactjs /> }
+    { to: "/cocktails", name: "Cocktails ", icon: <GrReactjs /> },
+    { to: "/rolldice", name: "Roll Dice ", icon: <GrReactjs /> },
   ];
 
   return (
