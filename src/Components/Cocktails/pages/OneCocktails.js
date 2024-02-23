@@ -1,18 +1,19 @@
-import React from 'react'
-import Loading from '../Loading'
-import { useParams, Link } from 'react-router-dom'
+import React, {useState, useEffect} from 'react';
+import Loading from '../Loading';
+import { useParams, Link } from 'react-router-dom';
+import "../style.css";
 
 export default function SingleCocktail() {
   const { id } = useParams()
-  const [loading, setLoading] = React.useState(false)
-  const [cocktail, setCocktail] = React.useState(null)
+  const [loading, setLoading] = useState(false)
+  const [cocktail, setCocktail] = useState(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     setLoading(true)
     async function getCocktail() {
       try {
         const response = await fetch(
-          `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
+          `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic=${id}`
         )
         const data = await response.json()
         if (data.drinks) {

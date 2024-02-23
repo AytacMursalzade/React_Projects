@@ -2,6 +2,7 @@ import React from 'react'
 import { useGlobalContext } from './context';
 import Loading from './Loading';
 import Cocktail from './Cocktail';
+import "./style.css";
 
 export default function CocktailList() {
 
@@ -13,20 +14,20 @@ export default function CocktailList() {
 
     if(cocktails.lenght < 1){
         return(
-            <h2>no cocktails matched your search criteria</h2>    
+            <h2 className='section-title'>no cocktails matched your search criteria</h2>    
         )
     }
 
 
   return (
-    <div>
-      <h2>Cocktails</h2>
-      <div>
+    <section className='section'>
+      <h2 className='section-title'>Cocktails</h2>
+      <div className='cocktails-center'>
         {cocktails.map((item) => {
             return <Cocktail key={item.id} {...item} />
         })}
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import { useGlobalContext } from './context';
+import "./style.css";
 
 
 export default function Search() {
@@ -23,9 +24,9 @@ export default function Search() {
 
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <section className='section search'>
+      <form  className='search-form' onSubmit={handleSubmit}>
+        <div className='form-control'>
           <label htmlFor="name">Search your favorite cocktail</label>
           <input
             type="text"
@@ -36,6 +37,6 @@ export default function Search() {
           />
         </div>
       </form>
-    </div>
+    </section>
   );
 }

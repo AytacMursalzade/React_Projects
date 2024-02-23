@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../style.css";
+
+
 export default function Error() {
   return (
     <section className="error-page section">
