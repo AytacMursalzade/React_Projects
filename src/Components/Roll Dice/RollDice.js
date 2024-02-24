@@ -15,14 +15,14 @@ function RollDice({ sides }) {
   const roll = () => {
     const newDie1 = sides[Math.floor(Math.random() * sides.length)];
     const newDie2 = sides[Math.floor(Math.random() * sides.length)];
-    const score1 = Object.values(newDie1)[0];
-    const score2 = Object.values(newDie2)[0];
+    // const score1 = Object.values(newDie1);
+    // const score2 = Object.values(newDie2);
 
     setState({
-        die1: Object.keys(newDie1)[0],
-        die2: Object.keys(newDie2)[0],
+        die1: Object.keys(newDie1),
+        die2: Object.keys(newDie2),
         rolling : true,
-        totalScore: score1 + score2
+        // totalScore: score1[0] + score2[0]
     });
 
     setTimeout(()=>{
@@ -39,7 +39,7 @@ function RollDice({ sides }) {
       <button className="ml-[29%] mt-[30px] w-[150px] h-[50px] bg-[navy] text-white " onClick={roll} disabled={rolling}>
         {rolling ? "Rolling..." : "Roll Dice"}
       </button>
-      <h2 className="ml-[28%] mt-[30px] w-[180px] text-center  py-[12px] h-[50px] bg-[navy] text-white ">Total Score: {totalScore}</h2>
+      {/* <h2 className="ml-[28%] mt-[30px] w-[180px] text-center py-[12px] h-[50px] bg-[navy] text-white ">Total Score: {totalScore}</h2> */}
     </div>
   );
 }
