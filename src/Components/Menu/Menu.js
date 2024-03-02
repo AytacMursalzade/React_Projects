@@ -16,7 +16,8 @@ function Menu() {
     { to: "/calculator", name: "Calculator App", icon: <GrReactjs /> },
     { to: "/cocktails", name: "Cocktails ", icon: <GrReactjs /> },
     { to: "/rolldice", name: "Roll Dice ", icon: <GrReactjs /> },
-    { to: "/notepad", name: "NotePad ", icon: <GrReactjs /> }
+    { to: "/notepad", name: "NotePad ", icon: <GrReactjs /> },
+    { to: "/stopwatch", name: "Stopwatch", icon: <GrReactjs /> }
   ];
 
   return (
