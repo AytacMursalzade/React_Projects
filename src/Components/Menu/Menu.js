@@ -21,8 +21,8 @@ function Menu() {
   ];
 
   return (
-    <div className="bg-[#ABAAA6]   h-screen">
-      <div className="flex flex-wrap w-[1500px]  gap-[50px]  ">
+    <div>
+      <div className="flex flex-wrap gap-[50px]  ">
         {links.map((link) => (
           <NavLink className="w-[150px] h-[150px] " key={link.to} to={link.to}>
             <Cardapp name={link.name} icon={link.icon}/>

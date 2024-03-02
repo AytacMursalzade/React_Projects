@@ -20,7 +20,7 @@ import Stopwatch from "./Components/StopWatch/Stopwatch.js";
 function App() {
   return (
     <>
-      <div className="bg-[#ABAAA6] ">
+      <div className="bg-[#ABAAA6] w-[100%] h-screen ">
         <DarkLight />
         {/* <Menu /> */}
         <BrowserRouter>
