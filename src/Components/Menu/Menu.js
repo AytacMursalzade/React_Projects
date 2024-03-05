@@ -17,7 +17,9 @@ function Menu() {
     { to: "/cocktails", name: "Cocktails ", icon: <GrReactjs /> },
     { to: "/rolldice", name: "Roll Dice ", icon: <GrReactjs /> },
     { to: "/notepad", name: "NotePad ", icon: <GrReactjs /> },
-    { to: "/stopwatch", name: "Stopwatch", icon: <GrReactjs /> }
+    { to: "/stopwatch", name: "Stopwatch", icon: <GrReactjs /> },
+    { to: "/drapdrop", name: "DrapDrop", icon: <GrReactjs /> },
+
   ];
 
   return (
@@ -25,8 +27,7 @@ function Menu() {
       <div className="flex flex-wrap gap-[50px]  ">
         {links.map((link) => (
           <NavLink className="w-[150px] h-[150px] " key={link.to} to={link.to}>
-            <Cardapp name={link.name} icon={link.icon}/>
-            
+            <Cardapp name={link.name} icon={link.icon}/>           
           </NavLink>
         ))}
       </div>

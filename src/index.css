@@ -2,28 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 
-.lobster-regular, h1 {
-    font-size: 35px;
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.bg-changed {
+  height: 3000px;
+  background-color: #ABAAA6;
+  
+}
+.lobster-regular,
+h1 {
+  font-size: 35px;
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main.dark-mode {
-    background-color: navy;
- }
- 
- .main.white-mode {
-    background-color: white;
- }
- 
- .main.dark-mode span {
-    color: white;
- }
- 
- .main.white-mode span {
-    color: black;
- }
+  background-color: navy;
+}
+
+.main.white-mode {
+  background-color: white;
+}
+
+.main.dark-mode span {
+  color: white;
+}
+
+.main.white-mode span {
+  color: black;
+}
