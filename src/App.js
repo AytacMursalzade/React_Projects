@@ -16,11 +16,13 @@ import Notemenu from "./Components/Notepad/Notemenu.js";
 import "./index.css";
 import DarkLight from "./DarkLight";
 import Stopwatch from "./Components/StopWatch/Stopwatch.js";
+import DrapDrop from "./Components/DrapDrop/DrapDrop.js";
 
 function App() {
   return (
     <>
-      <div className="bg-[#ABAAA6] w-[100%] h-screen ">
+     <div className="bg-changed">
+     <div className=" w-[100%] h-screen ">
         <DarkLight />
         {/* <Menu /> */}
         <BrowserRouter>
@@ -40,9 +42,12 @@ function App() {
             <Route path="/cocktails" element={<CocktailMenu />} />
             <Route path="/notepad" element={<Notemenu />} />
             <Route path="/stopwatch" element={<Stopwatch />} />
+            <Route path="/drapdrop" element={<DrapDrop />} />
+           
           </Routes>
         </BrowserRouter>
       </div>
+     </div>
     </>
   );
 }
