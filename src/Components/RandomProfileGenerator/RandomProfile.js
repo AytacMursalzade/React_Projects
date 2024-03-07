@@ -23,11 +23,11 @@ function RandomProfile() {
   };
 
   return (
-    <div className="Place h-screen  rounded-[8px] bg-[#4a1621] text-[#744350] font-bold  flex flex-col gap-[15px] justify-center items-center ">
+    <div className="Place h-screen  rounded-[8px]text-[#744350] font-bold  flex flex-col gap-[15px] justify-center items-center ">
       <div className="text-[#9a596a]  mt-[-90px] mb-[70px] text-[32px] font-extrabold">
         <h1>Random Profile Generator</h1>
       </div>
-      <div className="Placeprofile rounded-[8px] w-[40%] h-[300px] flex flex-col text-center items-center gap-[20px] pt-[20px] bg-[#c87fad] ">
+      <div className="Placeprofile rounded-[8px] w-[50%] h-[350px] flex flex-col text-center items-center gap-[20px] pt-[20px] bg-[#c87fad] ">
         <div className="PlacePhoto w=[100%] rounded-[8px]">
           <img src={profile} alt="profile" />
         </div>

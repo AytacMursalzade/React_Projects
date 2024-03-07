@@ -15,7 +15,7 @@ function Notepad() {
   }
 
   return (
-    <div className="h-screen ml-[30%] mt-[10%] ">
+    <div className="ml-[30%] mt-[10%] ">
       <h2>NotePad</h2>
       <div className="flex flex-row gap-[15px] mt-[120px] ">
         <label htmlFor="note">Note:</label>

@@ -11,7 +11,7 @@ function IncDec() {
   }
 
   return (
-    <div className="Place h-screen flex flex-col justify-center items-center bg-[#a99163] ">
+    <div className="Place flex flex-col mt-[90px] justify-center items-center ">
       <div className="text-[30px]  "><h1>Increment Decrement App</h1></div>
       <div className="CountText w-[500px] h-[200px] bg-[#F6FDC3] flex justify-center items-center">
         <p>{count}</p>

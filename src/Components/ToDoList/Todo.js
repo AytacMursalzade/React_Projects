@@ -19,7 +19,7 @@ function Todo() {
   };
 
   return (
-    <div className="Place h-screen  bg-[#C3C2C2] flex flex-col gap-[40px]  justify-center items-center  ">
+    <div className="Place flex flex-col gap-[40px] mt-[50px] justify-center items-center  ">
       <div>
         <h1 className="font-bold text-[25px] flex  w-[100%] text-[#23112D]  ">
           Todo List

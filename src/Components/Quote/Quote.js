@@ -39,7 +39,7 @@ function Quote() {
   }
 
   return (
-    <div className="Place h-screen bg-[#7E6363] flex flex-col justify-center items-center gap-[8px] ">
+    <div className="Place h-screen  flex flex-col justify-center items-center gap-[8px] ">
       <div className="placeTitle font-bold text-[35px] mb-[5px] ">
         <h1>Quote of the day</h1>
       </div>

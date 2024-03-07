@@ -19,6 +19,7 @@ function Menu() {
     { to: "/notepad", name: "NotePad ", icon: <GrReactjs /> },
     { to: "/stopwatch", name: "Stopwatch", icon: <GrReactjs /> },
     { to: "/drapdrop", name: "DrapDrop", icon: <GrReactjs /> },
+    { to: "/memory", name: "Memory Game", icon: <GrReactjs /> },
 
   ];
 

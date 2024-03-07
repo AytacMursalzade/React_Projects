@@ -3,7 +3,7 @@ import RollDice from './RollDice'
 
 function RollMenu() {
   return (
-    <div className='h-screen'>
+    <div>
       <RollDice />
     </div>
   )

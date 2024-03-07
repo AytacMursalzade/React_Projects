@@ -4,7 +4,7 @@ function Calc() {
   const [value, setValue] = useState("");
 
   return (
-    <div className="bg-[grey] h-screen ">
+    <div>
       
         
         <div className="w-[320px] h-[400px] relative top-[80px] left-[120px] flex justify-center items-center  bg-[#BCA178] ml-[30%]  rounded-[9px]">
