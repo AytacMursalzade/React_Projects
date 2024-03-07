@@ -15,7 +15,7 @@ export default function RedInc() {
     dispatch(decrement());
   };
   return (
-    <div className="flex flex-col items-center pt-[150px] gap-[30px] h-screen bg-[#C7C8CC] ">
+    <div className="flex flex-col items-center pt-[150px] gap-[30px] ">
       <div className="w-[150px]"><img src={image} alt="redux" /></div>
       <h1>Your count: {count}</h1>
       <div className="flex gap-[10px] text-center">

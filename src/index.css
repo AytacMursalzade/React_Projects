@@ -5,9 +5,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 
-.bg-changed {
+/* .bg-changed {
   height: 3000px;
-  background-color: #ABAAA6;
+ 
+  
+} */
+
+html , body{
+  height: 100%;
   
 }
 .lobster-regular,

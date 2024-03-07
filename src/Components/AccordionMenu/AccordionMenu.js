@@ -6,13 +6,13 @@ function AccordionMenu() {
   const [questions, setQuestions] = useState(data);
 
   return (
-    <div className="bg-[#c0b1b9] h-screen">
+    <div>
       
       <div className="Place flex flex-col gap-[10px] justify-center items-center">
-        <div className="PlaceH pt-[80px] ">
+        <div className="PlaceH pt-[60px] ">
           <h1>Accordion Menu</h1>
         </div>
-        <div className="pt-[10%]">
+        <div className="pt-[5%]">
           <section className="PlaceList ">
             {questions.map((item) => {
               return <Question key={item.id} {...item} />;

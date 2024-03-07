@@ -17,37 +17,39 @@ import "./index.css";
 import DarkLight from "./DarkLight";
 import Stopwatch from "./Components/StopWatch/Stopwatch.js";
 import DrapDrop from "./Components/DrapDrop/DrapDrop.js";
+import MainGame from "./Components/MemoryGame/MainGame.js";
 
 function App() {
   return (
     <>
-     <div className="bg-changed">
-     <div className=" w-[100%] h-screen ">
+      <div>
+        <div className=" w-[100%]">
         <DarkLight />
-        {/* <Menu /> */}
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Menu />} />
-            <Route path="/todo" element={<Todo />} />
-            <Route path="/rolldice" element={<RollMenu />} />
-            <Route path="/incdec" element={<IncDec />} />
-            <Route path="/randomprofile" element={<RandomProfile />} />
-            <Route path="/accordionmenu" element={<AccordionMenu />} />
-            <Route path="/quote" element={<Quote />} />
-            <Route path="/shopping" element={<Shopping />} />
-            <Route path="/modelapp" element={<NewModelApp />} />
-            <Route path="/reverseapp" element={<Word />} />
-            <Route path="/reverseapp" element={<Word />} />
-            <Route path="/calculator" element={<Calc />} />
-            <Route path="/cocktails" element={<CocktailMenu />} />
-            <Route path="/notepad" element={<Notemenu />} />
-            <Route path="/stopwatch" element={<Stopwatch />} />
-            <Route path="/drapdrop" element={<DrapDrop />} />
-           
-          </Routes>
-        </BrowserRouter>
+          
+          {/* <Menu /> */}
+          <BrowserRouter>
+            <Routes>
+
+              <Route index element={<Menu />} />
+              <Route path="/todo" element={<Todo />} />
+              <Route path="/rolldice" element={<RollMenu />} />
+              <Route path="/incdec" element={<IncDec />} />
+              <Route path="/randomprofile" element={<RandomProfile />} />
+              <Route path="/accordionmenu" element={<AccordionMenu />} />
+              <Route path="/quote" element={<Quote />} />
+              <Route path="/shopping" element={<Shopping />} />
+              <Route path="/modelapp" element={<NewModelApp />} />
+              <Route path="/reverseapp" element={<Word />} />
+              <Route path="/calculator" element={<Calc />} />
+              <Route path="/cocktails" element={<CocktailMenu />} />
+              <Route path="/notepad" element={<Notemenu />} />
+              <Route path="/stopwatch" element={<Stopwatch />} />
+              <Route path="/drapdrop" element={<DrapDrop />} />
+              <Route path="/memory" element={<MainGame />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
       </div>
-     </div>
     </>
   );
 }
