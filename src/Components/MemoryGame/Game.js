@@ -1,24 +1,34 @@
 import React, { useState } from "react";
 import ImageCard from './ImageCard';
+import "./game.css";
+import image1 from "../../assets/css.png";
+import image2 from "../../assets/html.png";
+import image3 from "../../assets/js.png";
+import image4 from "../../assets/php.png";
+import image5 from "../../assets/python.png";
+import image6 from "../../assets/reactjs.png";
+import image7 from "../../assets/reduxjs.png";
+import image8 from "../../assets/sql.png";
+
 
 function Game() {
   const [image, setImage] = useState(
     [
-      { id: 1, img: "../../assets/html.png", stat: "" },
-      { id: 1, img: "../../assets/html.png", stat: "" },
-      { id: 2, img: "../../assets/css.png", stat: "" },
-      { id: 2, img: "../../assets/css.png", stat: "" },
-      { id: 3, img: "../../assets/php.png", stat: "" },
-      { id: 3, img: "../../assets/php.png", stat: "" },
-      { id: 4, img: "../../assets/js.png", stat: "" },
-      { id: 4, img: "../../assets/js.png", stat: "" },
-      { id: 5, img: "../../assets/reactjs.png", stat: "" },
-      { id: 5, img: "../../assets/reactjs.png", stat: "" },
-      { id: 6, img: "../../assets/redux.png", stat: "" },
-      { id: 6, img: "../../assets/redux.png", stat: "" },
-      { id: 7, img: "../../assets/sql.png", stat: "" },
-      { id: 7, img: "../../assets/sql.png", stat: "" },
-      { id: 8, img: "../../assets/python.png", stat: "" },
+      { id: 1, img: image1, stat: "" },
+      { id: 1, img: image1, stat: "" },
+      { id: 2, img: image2, stat: "" },
+      { id: 2, img: image2, stat: "" },
+      { id: 3, img: image3, stat: "" },
+      { id: 3, img: image3, stat: "" },
+      { id: 4, img: image4, stat: "" },
+      { id: 4, img: image4, stat: "" },
+      { id: 5, img: image5, stat: "" },
+      { id: 5, img: image5, stat: "" },
+      { id: 6, img: image6, stat: "" },
+      { id: 6, img: image6, stat: "" },
+      { id: 7, img: image7, stat: "" },
+      { id: 7, img: image7, stat: "" },
+      { id: 8, img: image8, stat: "" },
     ].sort(() => Math.random() - 0.5)
   );
 
