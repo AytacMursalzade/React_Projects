@@ -10,7 +10,6 @@ import Shopping from "./Components/Shopping/MainDev.js";
 import NewModelApp from "./Components/NewModelApp/RedInc.js";
 import Word from "./Components/WordReverseApp/Word.js";
 import Calc from "./Components/Calculator/Calc.js";
-import CocktailMenu from "./Components/Cocktails/CocktailMenu.js";
 import RollMenu from "./Components/Roll Dice/RollMenu.js";
 import Notemenu from "./Components/Notepad/Notemenu.js";
 import "./index.css";
@@ -18,6 +17,7 @@ import DarkLight from "./DarkLight";
 import Stopwatch from "./Components/StopWatch/Stopwatch.js";
 import DrapDrop from "./Components/DrapDrop/DrapDrop.js";
 import MainGame from "./Components/MemoryGame/MainGame.js";
+import Tictac from './Components/TicTacGame/Tictac';
 
 function App() {
   return (
@@ -41,11 +41,11 @@ function App() {
               <Route path="/modelapp" element={<NewModelApp />} />
               <Route path="/reverseapp" element={<Word />} />
               <Route path="/calculator" element={<Calc />} />
-              <Route path="/cocktails" element={<CocktailMenu />} />
               <Route path="/notepad" element={<Notemenu />} />
               <Route path="/stopwatch" element={<Stopwatch />} />
               <Route path="/drapdrop" element={<DrapDrop />} />
               <Route path="/memory" element={<MainGame />} />
+              <Route path="/tictac" element={<Tictac />} />
             </Routes>
           </BrowserRouter>
         </div>
