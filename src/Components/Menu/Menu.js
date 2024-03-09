@@ -14,12 +14,12 @@ function Menu() {
     { to: "/modelapp", name: "Redux App", icon: <GrReactjs /> },
     { to: "/reverseapp", name: "Word Reverse App", icon: <GrReactjs /> },
     { to: "/calculator", name: "Calculator App", icon: <GrReactjs /> },
-    { to: "/cocktails", name: "Cocktails ", icon: <GrReactjs /> },
     { to: "/rolldice", name: "Roll Dice ", icon: <GrReactjs /> },
     { to: "/notepad", name: "NotePad ", icon: <GrReactjs /> },
     { to: "/stopwatch", name: "Stopwatch", icon: <GrReactjs /> },
     { to: "/drapdrop", name: "DrapDrop", icon: <GrReactjs /> },
     { to: "/memory", name: "Memory Game", icon: <GrReactjs /> },
+    { to: "/tictac", name: "XO Game", icon: <GrReactjs /> },
 
   ];
 

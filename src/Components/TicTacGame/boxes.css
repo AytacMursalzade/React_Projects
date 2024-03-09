@@ -1,0 +1,28 @@
+.squareMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 19px;
+}
+.square{
+    width: 450px;
+    height: 400px;
+    background-color: #111B22;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.rightOne , .rightTwo , .rightThree{
+    display: flex;
+    gap: 8px;
+}
+.boxes{
+    width: 150px;
+    height: 128px;
+    background-color: yellow;
+  
+}
+
+.boxes img{
+    margin: 3px 15px;
+}
