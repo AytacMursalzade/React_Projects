@@ -24,5 +24,15 @@
 }
 
 .boxes img{
-    margin: 3px 15px;
+    width: 147px;
+    height: 128px;
+    
+    
+}
+
+.winner-image{
+    display: flex;
+    width: 35px;
+    
+    margin-left: 155px;
 }
