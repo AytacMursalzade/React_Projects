@@ -13,7 +13,7 @@ import Calc from "./Components/Calculator/Calc.js";
 import RollMenu from "./Components/Roll Dice/RollMenu.js";
 import Notemenu from "./Components/Notepad/Notemenu.js";
 import "./index.css";
-import DarkLight from "./DarkLight";
+import DarkLight from "./Components/DarkLight.js";
 import Stopwatch from "./Components/StopWatch/Stopwatch.js";
 import DrapDrop from "./Components/DrapDrop/DrapDrop.js";
 import MainGame from "./Components/MemoryGame/MainGame.js";
