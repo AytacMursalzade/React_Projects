@@ -4,16 +4,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-
 /* .bg-changed {
   height: 3000px;
  
   
 } */
 
-html , body{
+html,
+body {
   height: 100%;
-  
 }
 .lobster-regular,
 h1 {
@@ -37,4 +36,234 @@ h1 {
 
 .main.white-mode span {
   color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  /* //Todo */
+  .PlaceTodo {
+    width: 70%;
+  }
+  .main {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+  }
+  .btnicon {
+    margin-left: 0;
+    color: rgb(52, 17, 17);
+    font-size: 32px;
+  }
+  /*Quote*/
+  .placeText {
+    width: 85%;
+  }
+  .placeBtn {
+    width: 60%;
+  }
+
+  /*Word*/
+  .Word {
+    margin-top: 40%;
+  }
+  /*XO*/
+  .squareMain {
+    margin-top: 70px;
+  }
+  /*NotePad*/
+
+  .NoteP {
+    width: 150px;
+    margin-top: 120px;
+  }
+
+  /*Calcin*/
+  .Calcin {
+    padding-right: 500px;
+  }
+  /*MenuMain*/
+  .MenuMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* //Todo */
+  .PlaceTodo {
+    width: 60%;
+  }
+  .main {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+  }
+  .btnicon {
+    margin-left: 0;
+    color: rgb(52, 17, 17);
+    font-size: 32px;
+  }
+  /*Quote*/
+  .placeText {
+    width: 75%;
+  }
+  .placeBtn {
+    width: 75%;
+  }
+  /*Word*/
+  .Word {
+    margin-top: 25%;
+  }
+  /*XO*/
+  .squareMain {
+    margin-top: 70px;
+  }
+  /*NotePad*/
+  .NoteP {
+    padding-right: 80px;
+    padding-top: 50px;
+  }
+  /*Calcin*/
+  .Calcin {
+    padding-right: 500px;
+  }
+  /*MenuMain*/
+  .MenuMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* //Todo */
+  .PlaceTodo {
+    width: 50%;
+  }
+  .main {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+  }
+  .btnicon {
+    margin-left: 0;
+    color: rgb(52, 17, 17);
+    font-size: 32px;
+  }
+  /*Quote*/
+  .placeText {
+    width: 60%;
+  }
+  .placeBtn {
+    width: 60%;
+  }
+  /*Word*/
+  .Word {
+    margin-top: 15%;
+  }
+  /*XO*/
+  .squareMain {
+    margin-top: 70px;
+  }
+  /*NotePad*/
+  .NoteP {
+    margin-right: 80px;
+    padding-top: 50px;
+  }
+  /*Calcin*/
+  .Calcin {
+    padding-right: 500px;
+  }
+  /*MenuMain*/
+  .MenuMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* //Todo */
+  .PlaceTodo {
+    width: 40%;
+  }
+  .main {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+  }
+  .btnicon {
+    margin-left: 0;
+    color: rgb(52, 17, 17);
+    font-size: 32px;
+  }
+  /*Quote*/
+  .placeText {
+    width: 70%;
+  }
+  .placeBtn {
+    width: 70%;
+  }
+  /*Word*/
+  .Word {
+    margin-top: 8%;
+  }
+  /*XO*/
+  .squareMain {
+    margin-top: 70px;
+  }
+  /*NotePad*/
+  .NoteP {
+    margin-right: 130px;
+    padding-top: 50px;
+  }
+  /*Calcin*/
+  .Calcin {
+    padding-right: 70px;
+  }
+  /*MenuMain*/
+  .MenuMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* //Todo */
+  .PlaceTodo {
+    width: 30%;
+  }
+  .main {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    width: 100%;
+  }
+  .btnicon {
+    margin-left: 0;
+    color: rgb(52, 17, 17);
+    font-size: 32px;
+  }
+  /*Quote*/
+  .placeText {
+    width: 30%;
+  }
+  .placeBtn {
+    width: 30%;
+  }
+  /*Word*/
+  .Word {
+    margin-top: 1%;
+  }
+  /*XO*/
+  .squareMain {
+    margin-top: 70px;
+  }
+  /*NotePad*/
+  .NoteP {
+    margin-right: 130px;
+    margin-top: 20px;
+  }
+  /*Calcin*/
+  .Calcin {
+    padding-right: 70px;
+  }
+  /*MenuMain*/
+  .MenuMain {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

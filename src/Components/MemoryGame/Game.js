@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import ImageCard from './ImageCard';
+import ImageCard from "./ImageCard";
 import "./game.css";
+import "../../index.css"
 import image1 from "../../assets/css.png";
 import image2 from "../../assets/html.png";
 import image3 from "../../assets/js.png";
@@ -9,7 +10,6 @@ import image5 from "../../assets/python.png";
 import image6 from "../../assets/reactjs.png";
 import image7 from "../../assets/reduxjs.png";
 import image8 from "../../assets/sql.png";
-
 
 function Game() {
   const [image, setImage] = useState(
@@ -69,16 +69,18 @@ function Game() {
 
   return (
     <>
-      <h1 className="ml-[45%] mt-[80px] ">Memory Game</h1>
-      <div className="container">
-        {image.map((item, index) => (
-          <ImageCard
-            key={index}
-            id={index}
-            handleClick={handleClick}
-            item={item}
-          />
-        ))}
+      <div className="Memo">
+        <h1 className="ml-[45%] mt-[80px] pb-[90px] ">Memory Game</h1>
+        <div className="containerin">
+          {image.map((item, index) => (
+            <ImageCard
+              key={index}
+              id={index}
+              handleClick={handleClick}
+              item={item}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

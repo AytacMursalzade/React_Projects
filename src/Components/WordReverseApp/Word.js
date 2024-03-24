@@ -15,7 +15,7 @@ function Word() {
   };
 
   return (
-    <div className=" flex flex-col items-center gap-[50px] w-auto   pl-[5%] pt-[15%] ">
+    <div className="Word flex flex-col items-center gap-[50px] w-auto pl-[5%] pt-[15%] ">
       <div className="mt-[-120px] mb-[100px] "><h1>Word Reverse App</h1></div>
       <div className="flex gap-[12px] ">
         <input className="bg-[red] rounded-[8px] px-[8px] "
