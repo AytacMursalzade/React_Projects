@@ -176,6 +176,77 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media only screen and (max-width: 767px) {
+  /* //Todo */
+  .PlaceTodo {
+    width: 50%;
+  }
+  .main {
+    position: sticky;
+    height: 50px;
+    width: 100%;
+  }
+  .btnicon {
+    margin-left: 0;
+    color: rgb(52, 17, 17);
+    font-size: 32px;
+  }
+  /*Quote*/
+  .placeText {
+    width: 110%;
+    margin-left: 130px;
+  }
+  .placeTitle{
+    margin-left: 110px;
+  }
+  .placeBtn {
+    width: 110%;
+    margin-left: 130px;
+  }
+  /*Word*/
+  .Word {
+    margin-top: 15%;
+  }
+  /*XO*/
+  .squareMain {
+    margin-top: 70px;
+  }
+  /*NotePad*/
+  .NoteP {
+    margin-left: 0;
+    padding-top: 50px;
+  }
+  .NoteMain{
+    margin-left: 100px;
+  }
+  /*Calcin*/
+  .Calcin {
+    margin-left: -70px;
+  }
+  /*Random*/
+  .Place {
+    width: 360px;
+    margin-left: 5px;    
+  }
+  .Placeprofile{
+    width: 350px;
+    margin-left: 120px;
+  }
+  .PlaceText{
+    width: 500px;
+    padding-left: 130px;
+  }
+  .PlaceInput{
+    width: 250px;
+    margin-left: 120px;
+  }
+  /*MenuMain*/
+  .MenuMain {
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media only screen and (min-width: 992px) {
   /* //Todo */
   .PlaceTodo {

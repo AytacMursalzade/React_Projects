@@ -24,7 +24,7 @@ function RandomProfile() {
 
   return (
     <div className="Place h-screen  rounded-[8px]text-[#744350] font-bold  flex flex-col gap-[15px] justify-center items-center ">
-      <div className="text-[#9a596a]  mt-[-90px] mb-[70px] text-[32px] font-extrabold">
+      <div className="PlaceText text-[#9a596a]  mt-[-90px] mb-[70px] text-[32px] font-extrabold">
         <h1>Random Profile Generator</h1>
       </div>
       <div className="Placeprofile rounded-[8px] w-[50%] h-[350px] flex flex-col text-center items-center gap-[20px] pt-[20px] bg-[#c87fad] ">
